@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cont = 1;
+        setInterval(mudarImage,3000);
+        function mudarImage(){
+            var elemento =document.getElementById("ima");
+            if(cont ==1){
+                elemento.src = "ima.jpg";
+            }
+            if(cont ==2){
+                elemento.src = "ima2.jpg";
+            }
+            if(cont ==3){
+                elemento.src = "ima3.jpg";
+            }
+            if(cont ==4){
+                elemento.src = "ima4.jpg";
+            }
+            if(cont ==5){
+                elemento.src = "ima5.jpg";
+                cont =0;
+            }
+            cont ++;
+        }
+    </script>
+    <img id="ima" src="ima1.jpg" alt="">;
+</body>
+</html>
